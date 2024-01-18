@@ -39,13 +39,13 @@ class AddNewCmsPage implements DataPatchInterface, PatchVersionInterface
     public function apply()
     {
         $pageData = [
-            'title' => 'CMS Page',
+            'title' => 'Custom Page Title',
             'page_layout' => '1column',
             'meta_keywords' => 'Page keywords',
             'meta_description' => 'Page description',
             'identifier' => 'custom-page',
             'content_heading' => 'Custom Page',
-            'content' => '<div class="main-cms-content">Hello this is my first cms page.</div>',
+            'content' => '<div class="main-cms-content">Content goes here for My cms page. CMS Page create using Programmatically</div>',
             'layout_update_xml' => '',
             'url_key' => 'custom-page',
             'is_active' => 1,
