@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Information</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($block->getStoreInformation() as $label => $value) : ?>
+            <tr>
+                <td><?= $label ?></td>
+                <td><?= $value ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
