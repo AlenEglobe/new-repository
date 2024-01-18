@@ -1,6 +1,6 @@
 <?php
 
-namespace Magento\FirstModule\Block;
+namespace FirstVendor\FirstModule\Block;
 
 use Magento\Framework\View\Element\Template;
 

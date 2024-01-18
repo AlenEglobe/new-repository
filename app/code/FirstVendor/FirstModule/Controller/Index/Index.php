@@ -1,6 +1,6 @@
 <?php
 
-namespace  Magento\FirstModule\Controller\Index;
+namespace  FirstVendor\FirstModule\Controller\Index;
 
 use \Magento\Framework\App\Action\Action;
 use \Magento\Framework\View\Result\PageFactory;
