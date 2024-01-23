@@ -3,4 +3,10 @@
 	<type name="Magento\Checkout\Model\Cart">
 		<plugin name="MagentoCart" type="FirstVendor\PluginModule\Plugin\cart" sortOrder="1" />
 	</type>
+	<type name="Magento\Cms\Controller\Page\View">
+		<plugin name="custom_logout_plugin" type="FirstVendor\PluginModule\Plugin\logoutPlugin" sortOrder="1" />
+	</type>
+	<type name="Magento\Catalog\Model\Category">
+		<plugin name="category_page_restrict" type="FirstVendor\PluginModule\Plugin\Restrictcategory" sortOrder="1" />
+	</type>
 </config>
