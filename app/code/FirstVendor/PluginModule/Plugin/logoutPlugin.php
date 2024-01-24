@@ -2,10 +2,6 @@
 
 namespace FirstVendor\PluginModule\Plugin;
 
-
-
-
-
 class logoutPlugin
 {
 
