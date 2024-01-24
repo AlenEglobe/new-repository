@@ -14,4 +14,7 @@
 	<type name="Magento\Catalog\Model\Product">
 		<plugin name="product_name_change" type="FirstVendor\PluginModule\Plugin\AppendName" sortOrder="1" />
 	</type>
+	<type name="Magento\Customer\Model\AccountManagement">
+		<plugin name="around_account_management" type="FirstVendor\PluginModule\Plugin\LoginLog" sortOrder="10" />
+	</type>
 </config>
