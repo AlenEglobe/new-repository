@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="logtable" resource="default" comment="List of data/schema patches">
+		<column xsi:type="int" name="id" nullable="false" comment="EntityID" />
+		<column xsi:type="varchar" length="1024" name="url" nullable="false" comment="Error 404 Url" />
+		<column xsi:type="int" name="count" nullable="false" comment="Count" />
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="id" />
+		</constraint>
+	</table>
+</schema>

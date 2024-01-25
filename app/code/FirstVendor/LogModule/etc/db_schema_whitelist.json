@@ -1,0 +1,12 @@
+{
+    "logtable": {
+        "column": {
+            "id": true,
+            "url": true,
+            "count": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
