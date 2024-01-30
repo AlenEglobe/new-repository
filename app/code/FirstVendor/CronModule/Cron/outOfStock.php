@@ -31,17 +31,21 @@ class outOfStock
 
     public function execute()
     {
-        $writer = new \Laminas\Log\Writer\Stream(BP . '/var/log/cron.log');
-        $logger = new \Laminas\Log\Logger();
+
+        $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/cron.log');
+        $logger = new \Zend_Log();
         $logger->addWriter($writer);
+
+
 
         $products = $this->productFactory->getList($this->searchCriteriaBuilder->create());
 
         foreach ($products->getItems() as $product) {
+
             $stock = $this->stockRegistry->getStockItem($product->getId());
             if (!$stock->getIsInStock()) {
 
-                $this->logger->info("Product " . $product->getName() . " is out of stock");
+                $logger->info("Product " . $product->getName() . " is out of stock");
             }
         }
     }
