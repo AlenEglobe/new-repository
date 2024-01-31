@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<virtualType name="FirstVendor\GridModule\Model\ResourceModel\Log\Log\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">
+				logtable
+			</argument>
+			<argument name="resourceModel" xsi:type="string">
+				FirstVendor\GridModule\Model\ResourceModel\Log
+			</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="uigrid_grid_listing_data_source" xsi:type="string">
+					FirstVendor\GridModule\Model\ResourceModel\Log\Log\Collection
+				</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
